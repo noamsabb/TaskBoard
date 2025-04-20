@@ -1,0 +1,133 @@
+@font-face {
+  font-family: WorkBench;
+  src: url(/fonts/WorkBench.ttf);
+}
+
+html {
+  background-image: url(assets/corkBoard-Backgound.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+h1 {
+  text-align: center;
+  font-family: WorkBench;
+  font-size: 50px;
+}
+footer {
+  text-align: center;
+  font-weight: bold;
+}
+
+#formWrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-left: 100px;
+}
+form {
+  width: 600px;
+  height: 180px;
+  /* border: solid black; */
+  text-align: center;
+  font-size: larger;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 2fr 1fr;
+}
+form > textarea {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+}
+
+#taskTextBox {
+  grid-column: 2;
+  grid-row: 1;
+}
+#timeTextBox {
+  grid-column: 2;
+  grid-row: 2;
+  width: 160px;
+  height: 25px;
+  margin-top: 10px;
+  margin-left: 70px;
+}
+#containerDiv {
+  display: flex;
+  flex-wrap: wrap;
+}
+#timeMessageBox{
+    grid-column: 2;
+    grid-row: 2;
+    margin-top: 37px;
+}
+
+.taskDiv {
+  margin-top: 30px;
+  width: 100px;
+  height: 70px;
+  overflow: scroll;
+}
+.timeDiv {
+  margin-top: 10px;
+  font-size: small;
+}
+
+#resetButton {
+  background-color: red;
+  font-weight: bolder;
+  width: 60px;
+  height: 60px;
+  grid-column: 3;
+  grid-row: 2;
+  margin-right: 100px;
+}
+#resetButton:hover {
+  background-color: darkred;
+}
+
+#addButton {
+  width: 90px;
+  height: 80px;
+  background-color: green;
+  display: inline-block;
+  font-weight: bold;
+  font-size: medium;
+  grid-column: 1;
+  grid-row: 1;
+  justify-content: center;
+}
+#addButton:hover {
+  background-color: darkgreen;
+}
+
+#clearButton {
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  font-weight: bold;
+  grid-column: 1;
+  grid-row: 2;
+  justify-content: center;
+}
+
+.card {
+  margin: 10px;
+  padding: 15px;
+  width: 100px;
+  height: 160px;
+  position: relative;
+  background-image: url("assets/PostIt.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card > span {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  cursor: pointer;
+  margin-top: 25px;
+}

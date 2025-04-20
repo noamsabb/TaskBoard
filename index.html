@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Board</title>
+
+    <script defer src="main.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>Your Personal Task board</h1>
+    <div id="formWrap">
+        <form onsubmit="addTodo()" method="dialog">
+          <textarea
+            id="taskTextBox"
+            placeholder="Enter your Task"
+            required
+          ></textarea>
+          <br /><br />
+          <input
+            type="datetime-local"
+            class="form-control"
+            id="timeTextBox"
+            required
+          />
+          <br />
+          <span id="timeMessageBox"></span>
+          <br />
+            <button id="addButton">Add to task board</button>
+            <button type="reset" id="clearButton">Clear form</button>
+            <button onclick="resetTaskBoard()" id="resetButton" type="button">
+              Reset Task Board
+            </button>
+        </form>
+    </div>
+
+    <hr />
+    <div id="containerDiv"></div>
+  </body>
+
+  <footer> ©️ <a href="https://github.com/noamsabb">Noam Sabban</a> - John Bryce 2025</footer>
+</html>

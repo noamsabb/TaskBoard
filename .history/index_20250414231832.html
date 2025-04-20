@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Board</title>
+
+    <script defer src="main.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>Your Personal Task board</h1>
+    <form onsubmit="addTodo()" method="dialog">
+      <textarea
+        id="taskTextBox"
+        value="This is a task"
+        required
+      >Hello this is my task</textarea>
+      <!-- To Change -->
+      <!-- <textarea
+        id="taskTextBox"
+        placeholder="Enter your Task"
+        value="This is a task"
+        required
+      ></textarea> -->
+      <br /><br />
+
+      <input
+        type="datetime-local"
+        class="form-control"
+        id="timeTextBox"
+        value="2025-06-14T14:30"
+        required
+      />
+      <br />
+      <span id="timeMessageBox"></span>
+      <br />
+
+      <!-- <div class="buttonContainer"> -->
+        <button id="addButton">Add to task board</button>
+        <button type="reset" id="clearButton">Clear form</button>
+        <button onclick="resetTaskBoard()" id="resetButton" type="button">
+          Reset Task Board
+        </button>
+      <!-- </div> -->
+    </form>
+
+    <hr />
+    <div id="containerDiv"></div>
+  </body>
+</html>

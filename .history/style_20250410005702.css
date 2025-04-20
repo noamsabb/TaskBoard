@@ -1,0 +1,94 @@
+html{
+    background-image: url(assets/corkBoard-Backgound.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+#containerDiv {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 10px;
+    padding: 15px;
+    width:100px;
+    height:160px;
+    position: relative;
+    background-image: url('assets/PostIt.png');
+    background-size: cover;         
+    background-repeat: no-repeat;   
+    background-position: center;    
+}
+
+.card > span {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    cursor: pointer; 
+    margin-top: 25px;
+}
+
+textarea{
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+}
+
+.taskDiv{
+    margin-top: 30px;
+    /* border: solid black; */
+    width: 100px;
+    height: 70px;
+    overflow: scroll;
+}
+.timeDiv{
+    margin-top: 10px;
+    font-size: small;
+}
+
+h1{
+    text-align: center;
+}
+
+form{
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+}
+
+#resetButton{
+    background-color: red;
+    font-weight: bolder;
+    margin-left: 50px;
+    width: 80px;
+    height: 50px;
+    display: inline-block;
+
+}
+
+#addButton{
+    width: 70px;
+    height: 70px;
+    background-color: green;
+    display: inline-block;
+    font-weight: bold;
+}
+#addButton:hover {
+    background-color: darkgreen;
+  }
+
+#clearButton{
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+
+.buttonContainer{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}

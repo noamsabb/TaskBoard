@@ -1,0 +1,40 @@
+/* html{
+    background-image: url(assets/corkBoard-Backgound.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+
+
+#containerDiv {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    /* border: 1px solid black; */
+    margin: 10px;
+    padding: 15px;
+    width:100px;
+    height:160px;
+    position: relative;
+    background-image: url('assets/postit.avif');
+    background-size: cover;         /* makes image fill the card */
+    background-repeat: no-repeat;   /* prevents tiling */
+    background-position: center;    /* centers image in card */
+}
+
+.card > span {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    cursor: pointer; 
+    margin-top: 25px;
+}
+
+#taskDiv{
+    margin-top: 30px   ;
+}
+#timeDiv{
+    margin-top: 25px   ;
+}
+

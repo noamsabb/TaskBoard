@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script defer src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <h1>Your Personal Task board</h1>
+    <form onsubmit="addTodo()" method="dialog">
+
+        <textarea id="taskTextBox" placeholder="Enter your Task" required></textarea>
+        <br><br>
+
+        <input type="datetime-local" placeholder="Enter Time and Date" id= "timeTextBox" required>
+        <br> 
+        <span id="timeMessageBox"></span>
+        <br><br>
+        <!-- <label>Enter TODO Task: </label>
+        <textarea id="taskTextBox" required></textarea>
+        <br><br>
+
+        <label>Enter Date & Time: </label>
+        <input type="datetime-local" id= "timeTextBox" required>
+        <br> 
+        <span id="timeMessageBox"></span>
+        <br><br> -->
+
+        <button >Add</button> 
+        <button type="reset">Clear</button>
+    </form>
+
+    <hr>
+    <div id="containerDiv"></div>
+
+
+</body>
+</html>

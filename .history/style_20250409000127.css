@@ -1,0 +1,13 @@
+.buttons{
+    background-color: green;
+    color: white;
+}
+
+.buttons:hover{
+    background-color: red;
+    color: blue;
+}
+
+#myColoredTextBox{
+    background-color: lightcoral;
+}

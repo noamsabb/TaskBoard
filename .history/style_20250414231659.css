@@ -1,0 +1,145 @@
+
+@font-face {
+    font-family: SixtyFour ;
+    src: url(/fonts/SixtyFour.ttf);
+}
+@font-face {
+    font-family: WorkBench ;
+    src: url(/fonts/WorkBench.ttf);
+}
+
+html{
+    background-image: url(assets/corkBoard-Backgound.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+#containerDiv {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 10px;
+    padding: 15px;
+    width:100px;
+    height:160px;
+    position: relative;
+    background-image: url('assets/PostIt.png');
+    background-size: cover;         
+    background-repeat: no-repeat;   
+    background-position: center;    
+}
+
+.card > span {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    cursor: pointer; 
+    margin-top: 25px;
+}
+
+textarea{
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+}
+
+.taskDiv{
+    margin-top: 30px;
+    /* border: solid black; */
+    width: 100px;
+    height: 70px;
+    overflow: scroll;
+}
+.timeDiv{
+    margin-top: 10px;
+    font-size: small;
+}
+
+h1{
+    text-align: center;
+    font-family: WorkBench;
+    font-size: 50px;
+}
+
+form{
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 2fr 1fr;
+}
+
+#taskTextBox{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#timeTextBox{
+    grid-column: 2;
+    grid-row: 2;
+    width:180px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 60px;
+    
+}
+
+#resetButton{
+    background-color: red;
+    font-weight: bolder;
+    margin-left: 50px;
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    
+    
+    
+}
+#resetButton:hover {
+    background-color: darkred;
+  }
+
+#addButton{
+    width: 100px;
+    height: 70px;
+    background-color: green;
+    display: inline-block;
+    font-weight: bold;
+}
+#addButton:hover {
+    background-color: darkgreen;
+  }
+
+#clearButton{
+    width: 70px;
+    height: 70px;
+    margin-left: 10px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+
+.buttonContainer{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+@font-face {
+    font-family: SixtyFour ;
+    src: url(/fonts/SixtyFour.ttf/);
+}
+@font-face {
+    font-family: MoonDance ;
+    src: url(/fonts/MoonDance-Regular.ttf);
+}
+
+@font-face {
+    font-family: Sigmar ;
+    src: url(/fonts/Sigmar-Regular.ttf);
+}
